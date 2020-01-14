@@ -1,0 +1,27 @@
+{
+  "name": "curso-es6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Arthur1511/curso-es6.git",
+  "author": "Arthur1511 <arthur.bernardo1511@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.0",
+    "@babel/core": "^7.8.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.0",
+    "@babel/plugin-transform-async-to-generator": "^7.8.3",
+    "@babel/polyfill": "^7.8.3",
+    "@babel/preset-env": "^7.8.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "dev": "babel ./main.js -o ./bundle.js -w",
+    "ex": "babel ./exercicios01.js -o ./bundleEx.js -w",
+    "app": "webpack --mode=development -w"
+  },
+  "dependencies": {
+    "axios": "^0.19.1"
+  }
+}
